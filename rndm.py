@@ -33,9 +33,9 @@ def rndm(number, file):
     if 1 <= number <= 6:  # Checks if the entered number is between 1 and 6
         if loser_number == number:  # Compares the entered number with the random number
             os.remove(file)  # If they match, deletes the specified file
-            return os.path.basename(file) + " has been removed"  # Returns a message indicating the file was deleted
+            return os.path.basename(file) + " has been removed."  # Returns a message indicating the file was deleted
         else:
-            return "Your file lives yet"  # Returns a message indicating the file was not deleted
+            return "Your file still exists."  # Returns a message indicating the file was not deleted
     else:
         return "That number is not within the parameters"  # Returns a message if the number is out of range
 
